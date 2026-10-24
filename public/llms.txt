@@ -1,11 +1,12 @@
 # Yuvkesh Meena
 
-> Official profile of Yuvkesh Meena, Founder and Chief Executive Officer of Gothwad Tech.
+> Official profile of Yuvkesh Meena, Chief Executive Officer of Gothwad Tech.
 
 ## Profile facts
 
 - Name: Yuvkesh Meena
-- Role: Founder and Chief Executive Officer of Gothwad Tech
+- Role: Chief Executive Officer (CEO) of Gothwad Tech
+- Gothwad Tech founder: Pawan Gothwad
 - Birthplace: Dausa, Rajasthan, India
 - Official profile: https://ceo.gothwadtech.com/
 - Gothwad Tech public repositories: https://github.com/GothwadTech
@@ -17,7 +18,7 @@ The public repository portfolio includes products and projects across identity a
 
 ## Source notes
 
-- Profile identity, title, and birthplace are provided for this official profile.
+- Yuvkesh Meena’s role and birthplace, and Pawan Gothwad’s founder role, are supplied for this official profile.
 - Product summaries are based on public Gothwad Tech repository descriptions and developer documentation.
-- Public repositories can include companion applications, forks, prototypes, documentation, and infrastructure. Availability, implementation details, and licenses vary by project; check the linked source repository.
-- This page does not claim that every feature is deployed or that one person authored every line of code.
+- Public repositories can include companion applications, forks, prototypes, documentation, and infrastructure. Release details, implementation, and licenses vary by project; check each linked source repository.
+- This page does not claim that one person authored every line of code.

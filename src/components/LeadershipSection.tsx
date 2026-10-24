@@ -18,7 +18,7 @@ export function LeadershipSection() {
             <h2 id="leadership-title">The work behind the ecosystem.</h2>
           </div>
           <p className="leadership-intro">
-            As founder and CEO, Yuvkesh leads Gothwad Tech’s product portfolio. Across its public
+            As CEO, Yuvkesh leads Gothwad Tech’s product portfolio. Across its public
             projects, a few clear patterns emerge.
           </p>
         </div>

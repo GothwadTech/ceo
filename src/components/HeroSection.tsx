@@ -8,7 +8,7 @@ export function HeroSection() {
         <div className="hero-copy">
           <p className="eyebrow hero-eyebrow">
             <span className="eyebrow-rule" aria-hidden="true" />
-            Founder &amp; CEO <span className="eyebrow-divider">/</span> Gothwad Tech
+            Chief Executive Officer <span className="eyebrow-divider">/</span> Gothwad Tech
           </p>
 
           <h1 id="page-title">
@@ -16,8 +16,8 @@ export function HeroSection() {
           </h1>
 
           <p className="hero-lede">
-            Founder and chief executive of Gothwad Tech, leading a broad portfolio of software
-            products for web and mobile.
+            Yuvkesh Meena leads Gothwad Tech as its Chief Executive Officer, overseeing a portfolio
+            of products for web and mobile.
           </p>
 
           <p className="hero-origin">
@@ -35,27 +35,37 @@ export function HeroSection() {
           </div>
 
           <p className="hero-description">
-            Building across communication, digital services, media, developer tools and education.
+            Leading work across communication, digital services, media, developer tools and education.
           </p>
         </div>
 
         <figure className="hero-figure">
-          <div className="monogram-panel" role="img" aria-label="Yuvkesh Meena monogram, YM">
-            <div className="monogram-grid" aria-hidden="true" />
-            <span className="panel-index">GOTHWAD TECH <span>·</span> INDIA</span>
-            <span className="monogram-mark" aria-hidden="true">YM</span>
-            <span className="monogram-seal" aria-hidden="true">Y<br />M</span>
-            <div className="monogram-caption">
+          <div className="portrait-panel">
+            <picture className="portrait-picture">
+              <source srcSet="/assets/yuvkesh-meena.webp" type="image/webp" />
+              <img
+                className="portrait-image"
+                src="/assets/yuvkesh-meena.jpg"
+                alt="Yuvkesh Meena, Chief Executive Officer of Gothwad Tech"
+                width="1200"
+                height="1600"
+                fetchPriority="high"
+                decoding="async"
+              />
+            </picture>
+            <div className="portrait-shade" aria-hidden="true" />
+            <span className="portrait-kicker">GOTHWAD TECH <span>·</span> INDIA</span>
+            <div className="portrait-caption">
               <span className="caption-line" aria-hidden="true" />
               <span>
                 <strong>Yuvkesh Meena</strong>
-                <small>Founder &amp; Chief Executive Officer</small>
+                <small>Chief Executive Officer</small>
               </span>
             </div>
           </div>
           <figcaption>
-            <span>Gothwad Tech</span>
-            <span>Born in Dausa, Rajasthan</span>
+            <span>Official profile</span>
+            <span>Dausa, Rajasthan, India</span>
           </figcaption>
         </figure>
       </div>
@@ -63,7 +73,7 @@ export function HeroSection() {
       <div className="hero-baseline page-container" aria-label="Profile highlights">
         <div className="baseline-item">
           <span className="baseline-label">Role</span>
-          <span className="baseline-value">Founder &amp; CEO</span>
+          <span className="baseline-value">Chief Executive Officer</span>
         </div>
         <div className="baseline-item">
           <span className="baseline-label">Organization</span>

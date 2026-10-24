@@ -378,130 +378,98 @@ svg {
   margin: 0 0 0 auto;
 }
 
-.monogram-panel {
+.portrait-panel {
   position: relative;
-  display: grid;
-  min-height: 490px;
-  aspect-ratio: 0.86;
-  place-items: center;
+  width: 100%;
+  aspect-ratio: 0.82;
   overflow: hidden;
   isolation: isolate;
-  background:
-    radial-gradient(circle at 52% 42%, rgb(255 255 255 / 76%) 0, transparent 33%),
-    linear-gradient(145deg, #e6eae1 0%, #d9e2dc 46%, #e9e8dc 100%);
+  background: #d9e2dc;
   border: 1px solid rgb(43 72 61 / 15%);
+  box-shadow: 0 22px 55px rgb(25 52 42 / 9%);
 }
 
-.monogram-panel::before,
-.monogram-panel::after {
+.portrait-picture,
+.portrait-image {
   position: absolute;
-  z-index: -1;
-  content: '';
-  border: 1px solid rgb(35 91 72 / 13%);
-  border-radius: 50%;
-}
-
-.monogram-panel::before {
-  width: 88%;
-  aspect-ratio: 1;
-  transform: translate(8%, -6%);
-}
-
-.monogram-panel::after {
-  width: 64%;
-  aspect-ratio: 1;
-  transform: translate(8%, -6%);
-}
-
-.monogram-grid {
-  position: absolute;
-  z-index: -1;
   inset: 0;
-  opacity: 0.5;
-  background-image:
-    linear-gradient(rgb(47 87 71 / 5%) 1px, transparent 1px),
-    linear-gradient(90deg, rgb(47 87 71 / 5%) 1px, transparent 1px);
-  background-size: 38px 38px;
-  mask-image: linear-gradient(135deg, transparent 10%, #000 50%, transparent 92%);
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
-.panel-index {
+.portrait-image {
+  object-fit: cover;
+  object-position: center 23%;
+}
+
+.portrait-shade {
   position: absolute;
-  top: 24px;
-  left: 25px;
-  color: #64776c;
+  z-index: 1;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(
+    180deg,
+    rgb(15 40 32 / 30%) 0%,
+    transparent 19%,
+    transparent 56%,
+    rgb(12 32 26 / 78%) 100%
+  );
+}
+
+.portrait-kicker {
+  position: absolute;
+  z-index: 2;
+  top: 23px;
+  left: 24px;
+  color: #fff;
   font-size: 9px;
   font-weight: 700;
   letter-spacing: 0.17em;
+  text-shadow: 0 1px 9px rgb(0 0 0 / 32%);
 }
 
-.panel-index span {
+.portrait-kicker span {
   margin-inline: 4px;
-  color: var(--copper);
+  color: #edc6a3;
 }
 
-.monogram-mark {
-  position: relative;
-  padding-bottom: 34px;
-  color: rgb(26 70 55 / 85%);
-  font-family: var(--serif);
-  font-size: clamp(126px, 19vw, 218px);
-  line-height: 0.8;
-  letter-spacing: -0.09em;
-  transform: translateX(-8px);
-  user-select: none;
-}
-
-.monogram-seal {
+.portrait-caption {
   position: absolute;
-  top: 23%;
-  right: 14%;
-  display: grid;
-  width: 62px;
-  height: 62px;
-  place-content: center;
-  color: var(--green-dark);
-  border: 1px solid rgb(27 102 84 / 40%);
-  border-radius: 50%;
-  font-family: var(--serif);
-  font-size: 16px;
-  line-height: 1.02;
-  text-align: center;
-  transform: rotate(12deg);
-}
-
-.monogram-caption {
-  position: absolute;
+  z-index: 2;
   right: 25px;
-  bottom: 26px;
+  bottom: 25px;
   left: 25px;
   display: flex;
   align-items: center;
   gap: 12px;
-  padding-top: 16px;
-  border-top: 1px solid rgb(34 71 56 / 23%);
+  padding-top: 15px;
+  color: #fff;
+  border-top: 1px solid rgb(255 255 255 / 52%);
 }
 
 .caption-line {
   width: 25px;
   height: 2px;
-  background: var(--copper);
+  flex: 0 0 auto;
+  background: #e6b18a;
 }
 
-.monogram-caption strong,
-.monogram-caption small {
+.portrait-caption strong,
+.portrait-caption small {
   display: block;
 }
 
-.monogram-caption strong {
-  color: #233a31;
-  font-size: 12px;
+.portrait-caption strong {
+  color: #fff;
+  font-size: 13px;
   font-weight: 700;
+  letter-spacing: 0.01em;
 }
 
-.monogram-caption small {
+.portrait-caption small {
   margin-top: 2px;
-  color: #67766e;
+  color: rgb(255 255 255 / 82%);
   font-size: 10px;
 }
 
@@ -1278,8 +1246,8 @@ svg {
     gap: 55px;
   }
 
-  .monogram-panel {
-    min-height: 420px;
+  .portrait-panel {
+    aspect-ratio: 0.84;
   }
 
   .profile-layout {
@@ -1381,28 +1349,20 @@ svg {
     font-size: clamp(58px, 10vw, 80px);
   }
 
-  .monogram-panel {
-    min-height: 335px;
+  .portrait-panel {
+    aspect-ratio: 0.82;
   }
 
-  .monogram-caption {
+  .portrait-caption {
     right: 16px;
     bottom: 18px;
     left: 16px;
   }
 
-  .panel-index {
+  .portrait-kicker {
     top: 17px;
     left: 16px;
     font-size: 8px;
-  }
-
-  .monogram-seal {
-    top: 19%;
-    right: 11%;
-    width: 48px;
-    height: 48px;
-    font-size: 13px;
   }
 
   .hero-baseline {
@@ -1544,13 +1504,19 @@ svg {
     margin-left: 0;
   }
 
-  .monogram-panel {
-    min-height: min(114vw, 460px);
-    aspect-ratio: 0.94;
+  .portrait-panel {
+    aspect-ratio: 0.84;
   }
 
-  .monogram-mark {
-    font-size: clamp(150px, 46vw, 220px);
+  .portrait-kicker {
+    top: 18px;
+    left: 18px;
+  }
+
+  .portrait-caption {
+    right: 18px;
+    bottom: 19px;
+    left: 18px;
   }
 
   .hero-baseline {

@@ -5,6 +5,7 @@ const profileFacts = [
   { label: 'Full name', value: PROFILE.name },
   { label: 'Role', value: PROFILE.role },
   { label: 'Organization', value: PROFILE.organization },
+  { label: 'Company founder', value: PROFILE.founder },
   { label: 'Born in', value: PROFILE.birthplace },
 ];
 
@@ -14,11 +15,11 @@ export function ProfileSection() {
       <div className="page-container profile-layout">
         <div className="section-aside">
           <p className="eyebrow">The profile</p>
-          <p className="aside-note">A concise introduction to Yuvkesh Meena and his work at Gothwad Tech.</p>
+          <p className="aside-note">A concise introduction to Yuvkesh Meena’s role at Gothwad Tech.</p>
         </div>
 
         <div className="profile-main">
-          <h2 id="about-title">A founder building a connected technology portfolio.</h2>
+          <h2 id="about-title">Leading a connected technology portfolio.</h2>
           <div className="profile-prose">
             <p className="profile-lead">{PROFILE.introduction}</p>
             <p>{PROFILE.biography}</p>

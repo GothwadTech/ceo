@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+>
   <url>
     <loc>https://ceo.gothwadtech.com/</loc>
     <lastmod>2026-10-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://ceo.gothwadtech.com/assets/yuvkesh-meena.webp</image:loc>
+      <image:title>Yuvkesh Meena — CEO of Gothwad Tech</image:title>
+      <image:caption>Official portrait of Yuvkesh Meena, Chief Executive Officer of Gothwad Tech.</image:caption>
+    </image:image>
   </url>
 </urlset>

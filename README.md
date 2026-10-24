@@ -1,6 +1,6 @@
 # Yuvkesh Meena — Gothwad Tech profile
 
-A responsive, English-language profile for **Yuvkesh Meena, Founder and Chief Executive Officer of Gothwad Tech**. The site presents biographical facts, leadership context and a curated index of Gothwad Tech products with links to their public repositories and developer documentation.
+A responsive, English-language profile for **Yuvkesh Meena, Chief Executive Officer of Gothwad Tech**. Gothwad Tech was founded by **Pawan Gothwad**. This site presents Yuvkesh’s role, background and leadership context, along with a curated index of Gothwad Tech products linked to their public repositories and developer documentation.
 
 The profile is a static React/Vite site with no API keys, backend, database or contact-form data collection. Its production build prerenders the page into `dist/index.html` so search and social crawlers receive the biography and project catalogue in the initial HTML.
 
@@ -43,7 +43,7 @@ Add `ceo.gothwadtech.com` as a custom domain in Cloudflare Pages and follow the 
 - Search and social metadata, canonical URL and Person/ProfilePage structured data: `index.html`
 - Project cards link to Gothwad Tech's public source repositories; descriptions are intentionally limited to documented scope.
 - The Gothwad Tech logo is stored in `public/assets/gothwad-tech-logo.svg` and is also used as the favicon.
-- The hero currently uses a typographic `YM` identity panel rather than an unverified or generated headshot. When the approved portrait is available, place it in `public/assets/` and update `HeroSection.tsx` and the social-card artwork.
+- The supplied CEO portrait is optimized as `public/assets/yuvkesh-meena.webp`, with a JPEG fallback. The social preview uses a 1200 × 630 JPEG card at `public/og-yuvkesh-meena.jpg`.
 - `public/robots.txt`, `public/sitemap.xml`, `public/llms.txt` and `public/_headers` are copied to the Pages output by Vite.
 
 The product index is curated, not a live GitHub API feed. Check each linked repository for current release availability, licensing and implementation details. The page does not claim that repository ownership means one person authored every line of code.

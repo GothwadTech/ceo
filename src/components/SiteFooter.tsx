@@ -9,7 +9,7 @@ export function SiteFooter() {
           <img src="/assets/gothwad-tech-logo.svg" alt="" width="34" height="34" />
           <span>
             <strong>Yuvkesh Meena</strong>
-            <small>Founder &amp; CEO, Gothwad Tech</small>
+            <small>Chief Executive Officer, Gothwad Tech</small>
           </span>
         </a>
 

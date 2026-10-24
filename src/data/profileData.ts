@@ -1,18 +1,19 @@
 export const PROFILE = {
   name: 'Yuvkesh Meena',
-  role: 'Founder & Chief Executive Officer',
+  role: 'Chief Executive Officer (CEO)',
   organization: 'Gothwad Tech',
+  founder: 'Pawan Gothwad',
   birthplace: 'Dausa, Rajasthan, India',
   githubUrl: 'https://github.com/GothwadTech',
   docsUrl: 'https://docs.gothwadtech.com',
   companyUrl: 'https://www.gothwadtech.com',
   email: 'gothwadtech@gmail.com',
   description:
-    'Yuvkesh Meena is the founder and CEO of Gothwad Tech. Born in Dausa, Rajasthan, India, he leads a portfolio of software products across communication, digital services, media, developer tools and education.',
+    'Yuvkesh Meena is the CEO of Gothwad Tech, founded by Pawan Gothwad. Born in Dausa, Rajasthan, India, he leads its web and mobile product portfolio.',
   introduction:
-    'Yuvkesh Meena is the founder and chief executive officer of Gothwad Tech. Born in Dausa, Rajasthan, India, he leads the company’s product work across web and Android software, communication, digital services, developer tools and education.',
+    'Yuvkesh Meena is the Chief Executive Officer of Gothwad Tech, a company founded by Pawan Gothwad. Born in Dausa, Rajasthan, India, he leads the company’s work across web and Android software, communication, digital services, developer tools and education.',
   biography:
-    'Gothwad Tech’s public portfolio brings together connected services and standalone products for everyday digital use. Its repositories span account services, email and storage, messaging and video meetings, media applications, Android utilities, software tools and education technology. As founder and CEO, Yuvkesh leads the work behind this product ecosystem.',
+    'Gothwad Tech’s public portfolio brings together connected services and standalone products for everyday digital use. Its repositories span account services, email and storage, messaging and video meetings, media applications, Android utilities, software tools and education technology. As CEO, Yuvkesh leads work across this product ecosystem.',
   workNote:
     'Project summaries on this page are based on Gothwad Tech’s public repository descriptions and developer documentation. They describe the projects, not a claim that one person authored every line of code. Release availability and licensing can differ by repository.',
 } as const;

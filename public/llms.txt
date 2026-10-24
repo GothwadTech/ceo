@@ -1,0 +1,23 @@
+# Yuvkesh Meena
+
+> Official profile of Yuvkesh Meena, Founder and Chief Executive Officer of Gothwad Tech.
+
+## Profile facts
+
+- Name: Yuvkesh Meena
+- Role: Founder and Chief Executive Officer of Gothwad Tech
+- Birthplace: Dausa, Rajasthan, India
+- Official profile: https://ceo.gothwadtech.com/
+- Gothwad Tech public repositories: https://github.com/GothwadTech
+- Gothwad Tech developer documentation: https://docs.gothwadtech.com/
+
+## Gothwad Tech portfolio
+
+The public repository portfolio includes products and projects across identity and productivity, communication, media and Android devices, developer tools, remote access, and education. Selected repositories include Gothwad Accounts, Gothwad Mail, Gothwad Drive, GrixChat, Indogram, GXChat India, Gothwad Meet, Kiwi Store, PlusTube, Gothwad Browser, Gothwad AI Studio, Gothwad Education, and Gothwad Remote Desktop.
+
+## Source notes
+
+- Profile identity, title, and birthplace are provided for this official profile.
+- Product summaries are based on public Gothwad Tech repository descriptions and developer documentation.
+- Public repositories can include companion applications, forks, prototypes, documentation, and infrastructure. Availability, implementation details, and licenses vary by project; check the linked source repository.
+- This page does not claim that every feature is deployed or that one person authored every line of code.

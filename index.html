@@ -4,7 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#f7f7f2" />
-    <meta name="color-scheme" content="light" />
+    <meta name="color-scheme" content="light dark" />
+    <script>
+      try {
+        const preference = localStorage.getItem('ceo-profile-theme');
+        if (preference === 'light' || preference === 'dark') {
+          document.documentElement.setAttribute('data-theme', preference);
+        }
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const isDark = preference === 'dark' || (preference !== 'light' && prefersDark);
+        document.querySelector('meta[name="theme-color"]')?.setAttribute('content', isDark ? '#212121' : '#f7f7f2');
+      } catch {
+        // The stylesheet still follows the device theme if storage is unavailable.
+      }
+    </script>
     <meta name="robots" content="index,follow,max-image-preview:large" />
     <meta name="description" content="Yuvkesh Meena is CEO of Gothwad Tech, founded by Pawan Gothwad. Born in Dausa, Rajasthan, India, he leads its web and mobile product portfolio." />
 

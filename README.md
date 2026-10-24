@@ -42,7 +42,7 @@ Add `ceo.gothwadtech.com` as a custom domain in Cloudflare Pages and follow the 
 - Profile facts and product summaries: `src/data/profileData.ts`
 - Search and social metadata, canonical URL and Person/ProfilePage structured data: `index.html`
 - Project cards link to Gothwad Tech's public source repositories; descriptions are intentionally limited to documented scope.
-- The Gothwad Tech logo is stored in `public/assets/gothwad-tech-logo.svg` and is also used as the favicon.
+- The official Gothwad Tech logo from the source repository’s `public/assets` root is `public/assets/logo.png`. The matching ICO, Apple touch icon and 192/512 px app icons are included in `public/assets/` and referenced by the page and `public/site.webmanifest`; nested source asset folders are intentionally not copied.
 - The supplied CEO portrait is optimized as `public/assets/yuvkesh-meena.webp`, with a JPEG fallback. The social preview uses a 1200 × 630 JPEG card at `public/og-yuvkesh-meena.jpg`.
 - `public/robots.txt`, `public/sitemap.xml`, `public/llms.txt` and `public/_headers` are copied to the Pages output by Vite.
 

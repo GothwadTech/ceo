@@ -142,7 +142,7 @@ export function SiteHeader() {
       <header className="site-header">
         <div className="header-inner">
           <a className="brand" href="#top" aria-label="Yuvkesh Meena profile, top of page">
-            <img src="/assets/gothwad-tech-logo.svg" alt="" width="42" height="42" />
+            <img src="/assets/logo.png" alt="" width="42" height="42" />
             <span className="brand-copy">
               <span className="brand-name">Gothwad Tech</span>
               <span className="brand-caption">Yuvkesh Meena</span>

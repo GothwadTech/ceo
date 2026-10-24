@@ -6,7 +6,7 @@ export function SiteFooter() {
     <footer className="site-footer">
       <div className="page-container footer-inner">
         <a className="footer-brand" href="#top">
-          <img src="/assets/gothwad-tech-logo.svg" alt="" width="34" height="34" />
+          <img src="/assets/logo.png" alt="" width="34" height="34" />
           <span>
             <strong>Yuvkesh Meena</strong>
             <small>Chief Executive Officer, Gothwad Tech</small>

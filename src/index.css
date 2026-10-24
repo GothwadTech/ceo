@@ -343,12 +343,6 @@ svg {
   margin-left: 24px;
 }
 
-.theme-control {
-  position: relative;
-  display: inline-flex;
-  flex: 0 0 auto;
-}
-
 .theme-trigger,
 .menu-toggle,
 .mobile-nav-close {
@@ -367,84 +361,32 @@ svg {
 .theme-trigger:hover,
 .menu-toggle:hover,
 .mobile-nav-close:hover,
-.theme-trigger[aria-expanded='true'],
 .menu-toggle[aria-expanded='true'] {
   color: var(--green);
   background: var(--paper-deep);
   border-color: var(--green);
 }
 
-.theme-popover {
-  position: absolute;
-  z-index: 70;
-  top: calc(100% + 11px);
-  right: 0;
-  width: min(268px, calc(100vw - 42px));
-  padding: 9px;
-  color: var(--ink);
-  background: var(--surface);
-  border: 1px solid var(--line);
-  border-radius: 10px;
-  box-shadow: var(--dialog-shadow);
+.theme-icon-moon {
+  display: none;
 }
 
-.theme-popover-heading {
-  display: grid;
-  gap: 1px;
-  padding: 8px 10px 11px;
-  margin-bottom: 5px;
-  border-bottom: 1px solid var(--line);
+:root[data-theme='dark'] .theme-trigger .theme-icon-sun {
+  display: none;
 }
 
-.theme-popover-heading strong {
-  font-size: 12px;
-  font-weight: 700;
+:root[data-theme='dark'] .theme-trigger .theme-icon-moon {
+  display: block;
 }
 
-.theme-popover-heading span {
-  color: var(--muted);
-  font-size: 10px;
-}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) .theme-trigger .theme-icon-sun {
+    display: none;
+  }
 
-.theme-option {
-  display: grid;
-  grid-template-columns: 20px minmax(0, 1fr) 16px;
-  align-items: center;
-  gap: 10px;
-  width: 100%;
-  padding: 9px 10px;
-  color: var(--ink-soft);
-  text-align: left;
-  background: transparent;
-  border: 0;
-  border-radius: 7px;
-  cursor: pointer;
-  transition: color 150ms ease, background-color 150ms ease;
-}
-
-.theme-option:hover,
-.theme-option.is-selected {
-  color: var(--green);
-  background: var(--green-pale);
-}
-
-.theme-option-copy {
-  display: grid;
-  gap: 0;
-}
-
-.theme-option-copy strong {
-  font-size: 11px;
-  font-weight: 700;
-}
-
-.theme-option-copy small {
-  color: var(--muted);
-  font-size: 9px;
-}
-
-.theme-option-check {
-  justify-self: end;
+  :root:not([data-theme]) .theme-trigger .theme-icon-moon {
+    display: block;
+  }
 }
 
 .menu-toggle,
@@ -1526,11 +1468,6 @@ svg {
   .header-actions {
     gap: 8px;
     margin-left: 12px;
-  }
-
-  .theme-popover {
-    right: -46px;
-    width: min(268px, calc(100vw - 30px));
   }
 
   .desktop-nav,

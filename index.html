@@ -19,11 +19,15 @@
       }
     </script>
     <meta name="robots" content="index,follow,max-image-preview:large" />
+    <meta name="application-name" content="CEO of Gothwad Tech" />
     <meta name="description" content="Yuvkesh Meena is CEO of Gothwad Tech, founded by Pawan Gothwad. Born in Dausa, Rajasthan, India, he leads its web and mobile product portfolio." />
 
     <title>Yuvkesh Meena | CEO of Gothwad Tech</title>
     <link rel="canonical" href="https://ceo.gothwadtech.com/" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/assets/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/icon-192.png" />
+    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
     <link rel="preload" as="image" href="/assets/yuvkesh-meena.webp" type="image/webp" fetchpriority="high" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -31,7 +35,7 @@
 
     <meta property="og:type" content="profile" />
     <meta property="og:locale" content="en_IN" />
-    <meta property="og:site_name" content="Yuvkesh Meena — Gothwad Tech" />
+    <meta property="og:site_name" content="CEO of Gothwad Tech" />
     <meta property="og:title" content="Yuvkesh Meena | CEO of Gothwad Tech" />
     <meta property="og:description" content="Meet Yuvkesh Meena, Chief Executive Officer of Gothwad Tech. Born in Dausa, Rajasthan, India." />
     <meta property="og:url" content="https://ceo.gothwadtech.com/" />
@@ -57,7 +61,9 @@
             "@type": "WebSite",
             "@id": "https://ceo.gothwadtech.com/#website",
             "url": "https://ceo.gothwadtech.com/",
-            "name": "Yuvkesh Meena — CEO of Gothwad Tech",
+            "name": "CEO of Gothwad Tech",
+            "alternateName": "Yuvkesh Meena CEO Profile",
+            "description": "Official profile of Yuvkesh Meena, Chief Executive Officer (CEO) of Gothwad Tech.",
             "inLanguage": "en-IN",
             "about": { "@id": "https://ceo.gothwadtech.com/#person" },
             "publisher": { "@id": "https://www.gothwadtech.com/#organization" }
@@ -70,19 +76,21 @@
             "description": "Yuvkesh Meena is the Chief Executive Officer of Gothwad Tech, founded by Pawan Gothwad. Born in Dausa, Rajasthan, India, he leads a portfolio of software products across communication, digital services, media, developer tools and education.",
             "inLanguage": "en-IN",
             "isPartOf": { "@id": "https://ceo.gothwadtech.com/#website" },
-            "mainEntity": { "@id": "https://ceo.gothwadtech.com/#person" }
+            "mainEntity": { "@id": "https://ceo.gothwadtech.com/#person" },
+            "primaryImageOfPage": { "@id": "https://ceo.gothwadtech.com/#portrait" }
           },
           {
             "@type": "Person",
             "@id": "https://ceo.gothwadtech.com/#person",
             "name": "Yuvkesh Meena",
-            "jobTitle": "Chief Executive Officer",
-            "description": "Chief Executive Officer of Gothwad Tech, born in Dausa, Rajasthan, India.",
+            "jobTitle": "Chief Executive Officer (CEO)",
+            "description": "Yuvkesh Meena is the Chief Executive Officer (CEO) of Gothwad Tech, founded by Pawan Gothwad. He was born in Dausa, Rajasthan, India.",
+            "mainEntityOfPage": { "@id": "https://ceo.gothwadtech.com/#profile" },
             "birthPlace": {
               "@type": "Place",
               "name": "Dausa, Rajasthan, India"
             },
-            "image": "https://ceo.gothwadtech.com/assets/yuvkesh-meena.webp",
+            "image": { "@id": "https://ceo.gothwadtech.com/#portrait" },
             "worksFor": { "@id": "https://www.gothwadtech.com/#organization" },
             "url": "https://ceo.gothwadtech.com/",
             "knowsAbout": [
@@ -94,11 +102,23 @@
             ]
           },
           {
+            "@type": "ImageObject",
+            "@id": "https://ceo.gothwadtech.com/#portrait",
+            "name": "Yuvkesh Meena official portrait",
+            "url": "https://ceo.gothwadtech.com/assets/yuvkesh-meena.webp",
+            "contentUrl": "https://ceo.gothwadtech.com/assets/yuvkesh-meena.webp",
+            "caption": "Official portrait of Yuvkesh Meena, Chief Executive Officer of Gothwad Tech.",
+            "width": 1200,
+            "height": 1600,
+            "representativeOfPage": true
+          },
+          {
             "@type": "Organization",
             "@id": "https://www.gothwadtech.com/#organization",
             "name": "Gothwad Tech",
             "url": "https://www.gothwadtech.com/",
-            "logo": "https://ceo.gothwadtech.com/assets/gothwad-tech-logo.svg",
+            "logo": "https://ceo.gothwadtech.com/assets/logo.png",
+            "employee": { "@id": "https://ceo.gothwadtech.com/#person" },
             "founder": {
               "@type": "Person",
               "name": "Pawan Gothwad"

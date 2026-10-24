@@ -1,4 +1,4 @@
-# Yuvkesh Meena — Gothwad Tech profile
+# CEO of Gothwad Tech — Yuvkesh Meena profile
 
 A responsive, English-language profile for **Yuvkesh Meena, Chief Executive Officer of Gothwad Tech**. Gothwad Tech was founded by **Pawan Gothwad**. This site presents Yuvkesh’s role, background and leadership context, along with a curated index of Gothwad Tech products linked to their public repositories and developer documentation.
 

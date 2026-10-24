@@ -1,67 +1,24 @@
-import { useState } from 'react';
-import { Navbar } from './components/Navbar';
-import { ExecutiveHero } from './components/ExecutiveHero';
-import { LeadershipVision } from './components/LeadershipVision';
-import { RepositoryExplorer } from './components/RepositoryExplorer';
-import { ExecutiveTimeline } from './components/ExecutiveTimeline';
-import { ExecutiveContact } from './components/ExecutiveContact';
-import { Footer } from './components/Footer';
-import { RepoDetailModal } from './components/RepoDetailModal';
-import { ExecutiveBioModal } from './components/ExecutiveBioModal';
-import { RepositoryItem } from './data/profileData';
+import { ContactSection } from './components/ContactSection';
+import { HeroSection } from './components/HeroSection';
+import { LeadershipSection } from './components/LeadershipSection';
+import { ProfileSection } from './components/ProfileSection';
+import { ProjectsSection } from './components/ProjectsSection';
+import { SiteFooter } from './components/SiteFooter';
+import { SiteHeader } from './components/SiteHeader';
 
 export default function App() {
-  const [selectedRepo, setSelectedRepo] = useState<RepositoryItem | null>(null);
-  const [isBioModalOpen, setIsBioModalOpen] = useState(false);
-
-  const handleOpenContact = () => {
-    const contactSection = document.getElementById('contact');
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   return (
-    <div className="min-h-screen bg-[#070A11] text-[#E2E8F0] flex flex-col font-sans selection:bg-cyan-500/30 selection:text-cyan-200">
-      {/* Executive Navbar */}
-      <Navbar 
-        onOpenBio={() => setIsBioModalOpen(true)}
-        onOpenContact={handleOpenContact}
-      />
-
-      {/* Main Content Layout */}
-      <main className="flex-1">
-        <ExecutiveHero 
-          onOpenBio={() => setIsBioModalOpen(true)}
-          onOpenContact={handleOpenContact}
-        />
-
-        <LeadershipVision 
-          onOpenBio={() => setIsBioModalOpen(true)}
-        />
-
-        <RepositoryExplorer 
-          onSelectRepo={(repo) => setSelectedRepo(repo)}
-        />
-
-        <ExecutiveTimeline />
-
-        <ExecutiveContact />
+    <div className="site-shell">
+      <a className="skip-link" href="#main-content">Skip to content</a>
+      <SiteHeader />
+      <main id="main-content">
+        <HeroSection />
+        <ProfileSection />
+        <LeadershipSection />
+        <ProjectsSection />
+        <ContactSection />
       </main>
-
-      {/* Footer */}
-      <Footer />
-
-      {/* Interactive Modals */}
-      <RepoDetailModal 
-        repo={selectedRepo}
-        onClose={() => setSelectedRepo(null)}
-      />
-
-      <ExecutiveBioModal 
-        isOpen={isBioModalOpen}
-        onClose={() => setIsBioModalOpen(false)}
-      />
+      <SiteFooter />
     </div>
   );
 }
